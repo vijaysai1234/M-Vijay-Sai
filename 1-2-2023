@@ -1,3 +1,4 @@
+/////////////
 Calling one function from another
 
 one(){
@@ -8,4 +9,19 @@ two() {
  echo "second Function"
 }
 one
+
+//////////////
+wAP.a function to find wheather number is odd number or not. pass number as argument to the function.
+
+function is_odd {
+local num=$1
+if (( num % 2 == 0 )); then
+echo "False"
+else
+echo "True"
+fi
+}
+
+result=$(is_odd $1)
+echo "Is odd: $result"
 
