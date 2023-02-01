@@ -1,1 +1,11 @@
+Calling one function from another
+
+one(){
+ echo "First Function"
+ two
+}
+two() {
+ echo "second Function"
+}
+one
 
