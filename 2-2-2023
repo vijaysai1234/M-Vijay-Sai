@@ -36,3 +36,16 @@ name=$(cat "$file")
 echo $name
 
 ///////
+touch q2.txt
+vi q2
+vijay sai madala
+lovely professional university
+Telangana
+india
+esc,enter,shift+colon,wq
+
+
+
+
+write a command to print second to 4th line with the line number
+
