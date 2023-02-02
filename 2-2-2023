@@ -49,6 +49,6 @@ write a command to print second to 4th line with the line number.
 
 //////
 write a command to print a line the length is greater than 22.
-echo "This is a line with more than 22 characters."
+echo "This is a line with more than 22 characters." (rough)
 This is a line with more than 22 characters.
 
