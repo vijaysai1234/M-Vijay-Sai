@@ -1,1 +1,24 @@
 
+//////////
+write a program to declare a function one which return sum of two function arguments. declare another function. which fetch sum of first function and calculate the average of that. 
+in shell program
+
+# Function to return the sum of two arguments
+sum() {
+local result=$(($1 + $2))
+echo $result
+}
+
+# Function to calculate the average of the sum of two arguments
+average() {
+local sum=$(sum $1 $2)
+local result=$(($sum / 2))
+echo $result
+}
+
+# Call the average function with two arguments
+average 5 10
+
+////////////
+write a program to access varaiable which are defien in another file
+
