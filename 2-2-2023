@@ -32,5 +32,5 @@ echo$b
 //////////
 #write a program to keep the file contains "n5.sh" into a variable and acces  those content using another file
 file="n5.sh"
-name=$(cat "$file)
+name=$(cat "$file")
 echo $name
