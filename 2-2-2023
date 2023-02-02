@@ -22,3 +22,15 @@ average 5 10
 ////////////
 write a program to access varaiable which are defien in another file
 
+a=10
+b=20
+
+source n4.sh
+echo $a
+echo$b
+
+//////////
+#write a program to keep the file contains "n5.sh" into a variable and acces  those content using another file
+file="n5.sh"
+name=$(cat "$file)
+echo $name
