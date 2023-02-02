@@ -34,3 +34,5 @@ echo$b
 file="n5.sh"
 name=$(cat "$file")
 echo $name
+
+///////
