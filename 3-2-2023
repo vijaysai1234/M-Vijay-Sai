@@ -18,6 +18,70 @@ grep "P$" file.txt
 ////////////
 write a command - welocme k19cc - range from A TO Z.
 
+nano
+
+for letter in {A..Z}; do
+    echo "welcome k19cc - $letter"
+done
+
+let.sh
+
+. let.sh
+welcome k19cc - A
+welcome k19cc - B
+welcome k19cc - C
+welcome k19cc - D
+welcome k19cc - E
+welcome k19cc - F
+welcome k19cc - G
+welcome k19cc - H
+welcome k19cc - I
+welcome k19cc - J
+welcome k19cc - K
+welcome k19cc - L
+welcome k19cc - M
+welcome k19cc - N
+welcome k19cc - O
+welcome k19cc - P
+welcome k19cc - Q
+welcome k19cc - R
+welcome k19cc - S
+welcome k19cc - T
+welcome k19cc - U
+welcome k19cc - V
+welcome k19cc - W
+welcome k19cc - X
+welcome k19cc - Y
+welcome k19cc - Z
+/////////////
+
+write a shell program to read command line argument a number and print your name according to that number.
+
+nano 
+
+if [ $# -eq 0 ]; then
+  echo "2"
+  exit 1
+fi
+
+name="Madala Vijay Sai"
+
+for ((i=1;i<=$1;i++)); do
+  echo "$name"
+done
+
+e1.sh
+
+. e1.sh 5
+
+///////////////
+
+
+
+
+
+
+
 
 
 
