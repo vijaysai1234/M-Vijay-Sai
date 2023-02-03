@@ -95,7 +95,10 @@ e6.sh
 . e6.sh 5
 Output: Sum of odd numbers up to 5 is 9.
 /////////////////
-
+to update and install ngnix we use
+sudo apt update
+sudo apt install nginx
+//////////
 
 
 
