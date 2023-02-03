@@ -75,6 +75,26 @@ e1.sh
 . e1.sh 5
 
 ///////////////
+write a shall program to define function with argument. if argument values are odd then perform sum for it.
+nano
+sum_odd() {
+  local argument=$1
+  if ((argument % 2 != 0)); then
+    local sum=0
+    for ((i=1; i<=argument; i+=2)); do
+      ((sum+=i))
+    done
+    echo "Sum of odd numbers up to $argument is $sum."
+  else
+    echo "The argument must be an odd number."
+  fi
+}
+
+sum_odd $1
+e6.sh
+. e6.sh 5
+Output: Sum of odd numbers up to 5 is 9.
+/////////////////
 
 
 
