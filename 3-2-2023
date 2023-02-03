@@ -13,6 +13,9 @@ done
 //// 
 write a command to show the content end's up with p.
 
+grep "P$" file.txt
+
+////////////
 write a command - welocme k19cc - range from A TO Z.
 
 
