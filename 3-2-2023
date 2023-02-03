@@ -1,1 +1,15 @@
+/////////////////////
+write a shell program to set automatic mail when free memory is less.
+THRESHOLD=500000
+while true; do
+  free_memory=$(free -k | grep Mem | awk '{print $4}')
+  if [ $free_memory -lt $THRESHOLD ]; then
+    echo "Low memory alert! Only $free_memory KB left." | mail -s "Low Memory Alert" user@example.com
+    break
+  fi
+  sleep 300
+done
+
+
+
 
