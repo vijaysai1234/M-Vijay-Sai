@@ -8,6 +8,7 @@ COPY test.py ./
 CMD [ “python”, “./test.py”]
 
 /////////////////////
+
 FROM base
 
 MAINTAINER Moby Dock victor.coisne@docker.com
@@ -17,3 +18,11 @@ ENTRYPOINT echo “Whale you be my container”
 FROM ubuntu:latest
 
 ENTRYPOINT echo “entry”
+
+/////////////////
+
+FROM ubuntu:lastest
+RUN apt-get -y update
+RUN groupadd -r user && useradd -r -g user user
+User user
+
