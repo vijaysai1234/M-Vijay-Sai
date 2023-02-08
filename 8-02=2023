@@ -26,3 +26,21 @@ RUN apt-get -y update
 RUN groupadd -r user && useradd -r -g user user
 User user
 
+////////////////////////
+
+base image ubuntu
+
+dir to var/www/html
+install nginx
+
+copy index.html to workdir
+
+//////////////////////
+
+FROM ubuntu
+
+dir to var/www/html
+install nginx
+
+copy index.html to workdir
+
