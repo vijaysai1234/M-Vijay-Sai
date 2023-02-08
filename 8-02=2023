@@ -33,6 +33,14 @@ base image ubuntu
 dir to var/www/html
 install nginx
 
+/////////////////
+
+FROM ubuntu:latest
+EXPOSE 80/tcp
+EXPOSE 80/udp
+
+//////////////////
+
 copy index.html to workdir
 
 //////////////////////
