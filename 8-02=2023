@@ -1,6 +1,6 @@
 FROM python:latest
 
-LABEL Maintainer=”rahulgoud”
+LABEL Maintainer="vijaysai"
 
 WORKDIR /usr/app/src
 COPY test.py ./
