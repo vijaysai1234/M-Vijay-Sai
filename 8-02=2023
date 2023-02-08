@@ -1,0 +1,19 @@
+FROM python:latest
+
+LABEL Maintainer=”rahulgoud”
+
+WORKDIR /usr/app/src
+COPY test.py ./
+
+CMD [ “python”, “./test.py”]
+
+/////////////////////
+FROM base
+
+MAINTAINER Moby Dock victor.coisne@docker.com
+
+ENTRYPOINT echo “Whale you be my container”
+////////////////////
+FROM ubuntu:latest
+
+ENTRYPOINT echo “entry”
