@@ -39,6 +39,11 @@ services:
       
    docker-compose up
 /////////////////////
+create a file
+
+nano index.html
+
+<h2>workstatus ok</h2>
 
 
 
