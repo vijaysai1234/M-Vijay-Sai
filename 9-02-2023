@@ -11,3 +11,15 @@ database:
 image: redis
 
 ///////////////////////////////////////////////////
+
+nano docker-compose.yml ngnix
+
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+
+docker-compose up
+
