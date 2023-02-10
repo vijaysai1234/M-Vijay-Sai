@@ -5,3 +5,4 @@ docker network ls
 
 docker network inspect bridge
 
+create a docker in which two conatiners and containig link with web to db.
