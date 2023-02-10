@@ -1,4 +1,6 @@
 
+sudo chmod 666 /var/run/docker.sock
+
 docker network ls
 
 docker network inspect bridge
