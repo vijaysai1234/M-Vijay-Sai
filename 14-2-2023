@@ -10,3 +10,6 @@ docker
 docker netwrok create -h
 docker 
 
+//////////////////
+
+create a docker compose file for ngnix and assign static id's.
