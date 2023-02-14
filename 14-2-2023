@@ -1,4 +1,12 @@
 
 connect using network port mapping:
 
+
 dpcker run -d -p <_________>
+
+///////////////
+
+docker
+docker netwrok create -h
+docker 
+
