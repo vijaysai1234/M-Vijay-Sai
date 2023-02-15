@@ -5,3 +5,7 @@ docker volume ls
 
 docker volume prune
 y
+
+//////////////////////
+
+create a  host volume and specify the voulume details in the docker compose file which we create at host.
