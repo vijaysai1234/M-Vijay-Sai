@@ -10,9 +10,57 @@ docker volume prune
 
 create a  host volume and specify the voulume details in the docker compose file which we create at host.
 
+mkdir ~/datahst
 
+
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - datahst:/usr/share/nginx/html
+volumes:
+  datahst:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/user/datahst
+      
+docker-compose up
 
 
 //////////////
 
 create a docker compose file for ngnix and assign static ip's.
+
+version: '3'
+
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      nginx_network:
+        ipv4_address: 172.16.238.10
+  
+  webapp:
+    image: my-webapp
+    networks:
+      nginx_network:
+        ipv4_address: 172.16.238.11
+
+networks:
+  nginx_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
+          gateway: 172.16.238.1
+
+
