@@ -1,0 +1,7 @@
+
+docker volume create kwe
+
+docker volume ls
+
+docker volume prune
+y
